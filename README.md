@@ -1,6 +1,7 @@
 creates an icecast server in a docker container
 
-osx local build:
+### osx local build:
+clone the repo, cd into directory then...
 
 ```shell
 boot2docker up  
