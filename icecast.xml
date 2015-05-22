@@ -173,19 +173,19 @@
     </mount>
     -->
 
-    <!--
+    
     <mount type="normal">
-        <mount-name>/auth_example.ogg</mount-name>
+        <mount-name>/auth_stream.ogg</mount-name>
         <authentication type="url">
-            <option name="mount_add"       value="http://myauthserver.net/notify_mount.php"/>
-            <option name="mount_remove"    value="http://myauthserver.net/notify_mount.php"/>
-            <option name="listener_add"    value="http://myauthserver.net/notify_listener.php"/>
-            <option name="listener_remove" value="http://myauthserver.net/notify_listener.php"/>
+            <option name="mount_add"       value="http://ngrok.com/notify_mount"/>
+            <option name="mount_remove"    value="http://ngrok.com/notify_mount"/>
+            <option name="listener_add"    value="http://ngrok.com/notify_listener"/>
+            <option name="listener_remove" value="http://ngrok.com/notify_listener"/>
             <option name="headers"         value="x-pragma,x-token"/>
             <option name="header_prefix"   value="ClientHeader."/>
         </authentication>
     </mount>
-    -->
+    
 
     <fileserve>1</fileserve>
 

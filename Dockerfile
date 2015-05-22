@@ -7,8 +7,11 @@ RUN echo "nameserver 8.8.8.8" >> etc/resolv.conf
 RUN /etc/init.d/resolvconf restart
 
 RUN apt-get -y update
-RUN apt-get -y install build-essential libxml2 libxslt-dev curl libvorbis-dev libogg-dev
-# RUN apt-get -y install openssl 
+RUN apt-get -y install build-essential libxml2 libxslt-dev curl libvorbis-dev libogg-dev libcurl4-openssl-dev
+RUN apt-get -y install nano
+
+#workaround for allowing access back to root 
+RUN echo "root:Docker!" | chpasswd
 
 RUN useradd -ms /bin/bash entropy
 RUN adduser entropy sudo
