@@ -177,12 +177,13 @@
     <mount type="normal">
         <mount-name>/auth_stream.ogg</mount-name>
         <authentication type="url">
-            <option name="mount_add"       value="http://ngrok.com/notify_mount"/>
-            <option name="mount_remove"    value="http://ngrok.com/notify_mount"/>
-            <option name="listener_add"    value="http://ngrok.com/notify_listener"/>
-            <option name="listener_remove" value="http://ngrok.com/notify_listener"/>
+            <option name="mount_add"       value="http://00000000.ngrok.com/i/notify_mount"/>
+            <option name="mount_remove"    value="http://00000000.ngrok.com/i/notify_mount"/>
+            <option name="listener_add"    value="http://00000000.ngrok.com/i/notify_listener"/>
+            <option name="listener_remove" value="http://00000000.ngrok.com/i/notify_listener"/>
             <option name="headers"         value="x-pragma,x-token"/>
             <option name="header_prefix"   value="ClientHeader."/>
+            <option name="auth_header" value="icecast-auth-user: 1"/>
         </authentication>
     </mount>
     
